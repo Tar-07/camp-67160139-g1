@@ -14,8 +14,8 @@
         </style>
     </head>
 
-    <body class="bg-body-tertiary">
-            <div class="container mt-4 form-center" id="container">  <!-- เพิ่ม form-center เพื่อปรับแต่งใน style -->
+    <body >
+            <div class="container mt-2 form-center" id="container">  <!-- เพิ่ม form-center เพื่อปรับแต่งใน style -->
             <h1>Workshop #HTML - FORM</h1>
             <form>
                 <div class="row mt-3">
@@ -80,7 +80,7 @@
                         <label for="address">ที่อยู่</label>
                     </div>
                     <div class="col">
-                        <textarea class="form-control" id="address" name="address" rows="4" cols="35"></textarea>
+                        <textarea class="form-control" id="address" name="address" rows="3" cols="35"></textarea>
                     </div>
                 </div>
 
@@ -121,10 +121,10 @@
 
                 <div class="row mt-2" id="button">
                     <div class="col">
-                        <button type="reset" class="btn btn-outline-danger" value="Reset" id="reset-button" >Reset</button>
+                        <button type="reset" class="btn btn-danger" value="Reset" id="reset-button" >Reset</button>
                     </div>
                     <div class="col d-flex justify-content-end"> 
-                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                 </div>
             </form>
@@ -133,9 +133,27 @@
         <style> 
         /* กำหนดความกว้างสูงสุดและจัดให้อยู่กึ่งกลาง */
         .form-center {
-            max-width: 500px; /* กำหนดความกว้างสูงสุด */
+            max-width: auto; /* กำหนดความกว้างสูงสุด */
             margin-left: auto;
             margin-right: auto;
+        }
+        .container {
+            background: #535353ff;
+            width: 480px;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(1, 1, 1, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        .form-control {
+            background: rgba(214, 214, 214, 0.87);
+        }
+        body {
+            background-color: #2c254eff; 
+            color: #fffefeff;
         }
         
         </style>
