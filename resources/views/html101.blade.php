@@ -35,36 +35,105 @@
                         <input id="lname" class="form-control">
                     </div>
                 </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="daymonthyear">วัน/เดือน/ปีเกิด</label>
+                    </div>
+                    <div class="col">
+                        <input id="daymonthyear" type="date">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="age">อายุ</label>
+                    </div>
+                    <div class="col">
+                        <input id="age" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="gender">เพศ</label>
+                    </div>
+                    <div class="col">
+                        <input id="male" type="radio" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input id="female" type="radio" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="photo">รูป</label>
+                    </div>
+                    <div class="col">
+                        <input id="photo" type="file">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="address">ที่อยู่</label>
+                    </div>
+                    <div class="col">
+                        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="fav-color">สีที่ชอบ</label>
+                    </div>
+                    <div class="col">
+                        <select name="fav_color" id="fav-color">
+                        <option value="">-- กรุณาเลือก --</option> 
+                        <option value="red">สีแดง</option>
+                        <option value="blue">สีน้ำเงิน</option>
+                        <option value="green">สีเขียว</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-4">
+                        <label for="fav-music">เพลงที่ชอบ</label>
+                    </div>
+                    <div class="col">
+                        <input id="forlife" type="radio" name="fav-music" value="Forlife">
+                        <label for="forlife">เพื่อชีวิต</label>
+                        <input id="childfield" type="radio" name="fav-music" value="Childfield">
+                        <label for="childfield">ลูกทุ่ง</label>
+                        <input id="other" type="radio" name="fav-music" value="Other">
+                        <label for="other">อื่นๆ</label>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <input id="privacy" type="checkbox" name="privacy" value="True">
+                        <label for="privacy">ยินยอมให้เก็บข้อมูล</label>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <input type="reset" value="Reset" id="reset-button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
             </form>
         </div>
 
-        <h1 id="" class="">html&nbsp;&nbsp;&nbsp;101</h1> <!-- สเปคบาร์นับเป็นแท็ป --> <!-- &nbsp; = spacbar -->
-        <h1 style="color:blue;">  &lt;html 101</h1> <!-- &lt; = < -->
-        <h2>html 101</h2>
-        <h3>&gt;html 101</h3> <!-- &gt; = > -->
-        <hr/>
-        <hr>
-
-        <table border="1" width="100%"> <!-- สร้างตารางตาม thead และ tbody -->
-            <thead>
-                <tr>
-                    <th>ลำดับ</th> 
-                    <th>ชื่อ</th>
-                    <!-- <th> = Table Header Cell ใช้ในหัวตารางทำให้ตัวอักษร ตัวหนา + จัดกลาง อัตโนมัติ -->
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td> <!-- td = เซลล์ข้อมูล -->
-                    <td>thirapat</td>
-                </tr>
-            </tbody>
-        </table>
-
         <style> 
-            h1 { color:red;} 
+            h1 { color:black;} 
+            #reset-button {
+                /* กำหนดระยะห่างด้านขวา 10 พิกเซล */
+                margin-right: 500px; 
+            }
         </style>
-        <!-- ใช้ตามล่างสุดหากมี 2 สีในตำแหน่งเดียวกัน -->
-
     </body>
 </html>
