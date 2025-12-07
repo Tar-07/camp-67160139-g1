@@ -1,6 +1,6 @@
 <!-- file: resources/views/html101.blade.php -->
 <!Doctype html>
-<html>
+<html >
     <head>
         <title>this is head of html</title>
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -14,8 +14,8 @@
         </style>
     </head>
 
-    <body>
-        <div class="container mt-4">
+    <body class="bg-body-tertiary">
+            <div class="container mt-4 form-center" id="container">  <!-- เพิ่ม form-center เพื่อปรับแต่งใน style -->
             <h1>Workshop #HTML - FORM</h1>
             <form>
                 <div class="row mt-3">
@@ -23,16 +23,16 @@
                         <label for="fname">ชื่อ</label>
                     </div>
                     <div class="col">
-                        <input id="fname" class="form-control">
+                        <input id="fname" class="form-control" placeholder="ชื่อ">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-sm-12 col-md-4">
-                        <label for="lname">สกุล</label>
+                        <label for="lname">นามสกุล</label>
                     </div>
                     <div class="col">
-                        <input id="lname" class="form-control">
+                        <input id="lname" class="form-control" placeholder="นามสกุล">
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                         <label for="daymonthyear">วัน/เดือน/ปีเกิด</label>
                     </div>
                     <div class="col">
-                        <input id="daymonthyear" type="date">
+                        <input class="form-control" id="daymonthyear" type="date">
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         <label for="age">อายุ</label>
                     </div>
                     <div class="col">
-                        <input id="age" class="form-control">
+                        <input id="age" class="form-control" >
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                         <label for="photo">รูป</label>
                     </div>
                     <div class="col">
-                        <input id="photo" type="file">
+                        <input class="form-control" id="photo" type="file">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                         <label for="address">ที่อยู่</label>
                     </div>
                     <div class="col">
-                        <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                        <textarea class="form-control" id="address" name="address" rows="4" cols="35"></textarea>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@
                         <label for="fav-color">สีที่ชอบ</label>
                     </div>
                     <div class="col">
-                        <select name="fav_color" id="fav-color">
+                        <select name="fav_color" class="form-select" id="fav-color">
                         <option value="">-- กรุณาเลือก --</option> 
                         <option value="red">สีแดง</option>
                         <option value="blue">สีน้ำเงิน</option>
@@ -119,21 +119,25 @@
                     </div>
                 </div>
 
-                <div class="row mt-3">
+                <div class="row mt-2" id="button">
                     <div class="col">
-                        <input type="reset" value="Reset" id="reset-button">
-                        <input type="submit" value="Submit">
+                        <button type="reset" class="btn btn-outline-danger" value="Reset" id="reset-button" >Reset</button>
+                    </div>
+                    <div class="col d-flex justify-content-end"> 
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
 
         <style> 
-            h1 { color:black;} 
-            #reset-button {
-                /* กำหนดระยะห่างด้านขวา 10 พิกเซล */
-                margin-right: 500px; 
-            }
+        /* กำหนดความกว้างสูงสุดและจัดให้อยู่กึ่งกลาง */
+        .form-center {
+            max-width: 500px; /* กำหนดความกว้างสูงสุด */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         </style>
     </body>
 </html>
