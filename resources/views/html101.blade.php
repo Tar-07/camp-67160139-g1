@@ -3,13 +3,14 @@
 @section('title' , 'Workshop FORM')
 @section('content')
 <h1>Workshop #HTML - FORM</h1>
-    <form>
+    <form method="post" action="/senddata">
+        @csrf
         <div class="row mt-3">
             <div class="col-sm-12 col-md-4">
                 <label for="fname">ชื่อ</label>
             </div>
             <div class="col">
-                <input id="fname" class="form-control" >
+                <input name="fname" id="fname" class="form-control" >
                 <div class="valid-feedback">
                     ถูกต้อง
                 </div>
@@ -24,7 +25,7 @@
                 <label for="lname">นามสกุล</label>
             </div>
             <div class="col">
-                <input id="lname" class="form-control" >
+                <input name="lname" id="lname" class="form-control" >
                 <div class="valid-feedback">
                     ถูกต้อง
                 </div>
@@ -39,7 +40,7 @@
                 <label for="birthday">วัน/เดือน/ปีเกิด</label>
             </div>
             <div class="col">
-                <input class="form-control" id="birthday" type="date">
+                <input name="birthday" class="form-control" id="birthday" type="date">
                 <div class="valid-feedback">
                     ถูกต้อง
                 </div>
@@ -54,7 +55,7 @@
                 <label for="age">อายุ</label>
             </div>
             <div class="col">
-                <input id="age" class="form-control" >
+                <input name="age" id="age" class="form-control" >
                 <div class="valid-feedback">
                     ถูกต้อง
                 </div>
@@ -87,7 +88,7 @@
                 <label for="photo">รูป</label>
             </div>
             <div class="col">
-                <input class="form-control" id="photo" type="file">
+                <input name="photo" class="form-control" id="photo" type="file">
                 <div class="valid-feedback " >
                     ถูกต้อง
                 </div>
@@ -137,11 +138,11 @@
                 <label for="fav-music">เพลงที่ชอบ</label>
             </div>
             <div class="col" id="fav-music-group">
-                <input id="EDM" type="radio" name="fav-music" value="EDM">
+                <input id="EDM" type="radio" name="fav_music" value="EDM">
                 <label for="EDM">EDM</label>
-                <input id="classic" type="radio" name="fav-music" value="classic">
+                <input id="classic" type="radio" name="fav_music" value="classic">
                 <label for="classic">คลาสสิค</label>
-                <input id="other" type="radio" name="fav-music" value="Other">
+                <input id="other" type="radio" name="fav_music" value="Other">
                 <label for="other">อื่นๆ</label>
                 <div class="valid-feedback " >
                     ถูกต้อง
@@ -170,7 +171,7 @@
                 <button type="reset" class="btn btn-light" value="Reset" id="reset-button" >Reset</button>
             </div>
             <div class="col d-flex justify-content-end">
-                <button type="button" class="btn btn-success" onclick="clickme()">Submit</button>
+                <button type="submit" class="btn btn-success" onclick="clickme()">Submit</button>
             </div>
         </div>
     </form>

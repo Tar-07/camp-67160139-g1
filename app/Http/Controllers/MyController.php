@@ -15,6 +15,20 @@ class MyController extends Controller
 
     }
 
+    function data(Request $req){
+        $fname = $req->input('fname');
+        $lname = $req->input('lname');
+        $birthday = $req->input('birthday');
+        $age = $req->input('age');
+        $gender = $req->input('gender');
+        $photo = $req->input('photo');
+        $address = $req->input('address');
+        $fav_color = $req->input('fav_color');
+        $fav_music = $req->input('fav_music');
+        $privacy = $req->input('privacy');
+        return view('html101_view', compact('fname', 'lname', 'birthday', 'age', 'gender', 'photo', 'address', 'fav_color', 'fav_music', 'privacy'));
+    }
+
     function index(){
         return view('myview.index');
     }
