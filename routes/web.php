@@ -15,3 +15,5 @@ Route::get('/calculate', [App\Http\Controllers\MyController::class, 'info']);
 Route::post('/calculate', [App\Http\Controllers\MyController::class, 'calculate']);
 //get คือ method กระบวนการในการส่งข้อมูลระหว่างเซิฟกับไคลเอน
 Route::post('/senddata', [App\Http\Controllers\MyController::class, 'data']);
+
+Route::resource('/flights', App\Http\Controllers\FlightController::class);
