@@ -24,7 +24,7 @@
             }
             .container {
                 background: #535353ff;
-                width: 480px;
+
                 padding: 30px 40px;
                 border-radius: 15px;
                 box-shadow: 0px 4px 12px rgba(1, 1, 1, 0.1);
